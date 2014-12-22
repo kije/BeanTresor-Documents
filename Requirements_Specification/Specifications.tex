@@ -23,7 +23,7 @@
 % INFO SECTION %
 \def \docTitle{BeanTresor}
 \def \docSubtitle{Specifications}
-\def \docAuthor{\href{http://kije.ch}{kije-dev}}
+\def \docAuthor{\href{mailto:info@kije.ch}{Kim D. Jeker}}
 \def \docDate{\today}
 
 \hypersetup{
@@ -45,7 +45,6 @@
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{ngerman}
 \usepackage[a4paper]{geometry}
 \usepackage[
 	activate=true,
@@ -62,6 +61,7 @@
 \usepackage{ellipsis}
 \usepackage{bigfoot}
 \usepackage{lipsum}
+\usepackage[parfill]{parskip}
 
 \setkomafont{disposition}{\normalfont}
 \setkomafont{title}{\normalfont\bfseries\scshape\Huge}
@@ -77,7 +77,7 @@
 % DOC INFO 
 \title{\docTitle}
 \subtitle{\docSubtitle}
-\author{\large\scshape\docAuthor}
+\author{\large\scshape \docAuthor \\ \large\scshape\textbf{\href{http://kije.ch}{kije-dev}}}
 \date{\normalsize\scshape\docDate}
 
 % HEADER & FOOTER
@@ -90,13 +90,30 @@
 \rfoot{Page \thepage\ of \pageref*{LastPage} }
 
 
-% Make German ;)
-\renewcommand{\figurename}{Abbildung}
-
 \begin{document}
 \maketitle
 \newpage
 \tableofcontents
 \newpage
+
+\section{Introduction}
+\subsection*{The Problem(s)\ldots}
+Today, every user has do deal with dozens or even hunderts of passwords daily.
+This often causes users to reuse the same password on multiple sites. 
+
+While this seems very convenient, it's very insecure and can be even dangerous\footnote{e.g. use the same password for \url{themaliciousshop.com} as for e-Banking}, because if someone can retrive the password from one site, he is able to login to other sites where the user also has used this password. 
+
+One might argue, nowadays this isn't as much a problem as it was some years ago, since most Online Services started to hash\footnote{Often also refered as "encrypt", but this is technically not quite correct} their user's passwords. While this is true, we need to acknowledge that breaking into a database is not the only way to get passwords from users. For example, an attacker can also spy on a user's connection, or he can simply bruteforce the password.
+
+Unfortunatelly, the use of a new password for every site (one-time passwords) will not prevent attackers from retriving passwords. But it will minimize the damage caused to the user in such a case.
+
+An other problem is the strength of passwords. In order to remember a password, users often use the name of one of their friends, family members, pet, girl- or boyfriend etc\ldots as their password, which isn't very secure.
+
+\subsection*{\ldots and the solution}
+To make it, nevertheless, easy and convenient for the user to create and use \textbf{secure} one-time passwords, we need password managers.
+
+Such a password manager will be \textbf{BeanTresor}. It will be focused on a very user-friendly user interface and should be cross-platform and open-source.
+
+
 
 \end{document}
