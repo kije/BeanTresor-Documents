@@ -1,4 +1,4 @@
-GNU GENERAL PUBLIC LICENSE
+		     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
@@ -21,7 +21,7 @@ your programs, too.
 
   When we speak of free software, we are referring to freedom, not
 price.  Our General Public Licenses are designed to make sure that you
-have the freedom to distribute copies of free software (and charge for
+have the freedom to distribute copies of free software (and charge for 
 them if you wish), that you receive source code or can get it if you
 want it, that you can change the software or use pieces of it in new
 free programs, and that you know you can do these things.
@@ -132,7 +132,7 @@ implementation is available to the public in source code form.  A
 produce the work, or an object code interpreter used to run it.
 
   The "Corresponding Source" for a work in object code form means all
-the source code needed to generate, install, and (for an executable
+the source code needed to generate, install, and (for an executable 
 work) run the object code and to modify the work, including scripts to
 control those activities.  However, it does not include the work's
 System Libraries, or general-purpose tools or generally available free
@@ -323,7 +323,7 @@ fixed term (regardless of how the transaction is characterized), the
 Corresponding Source conveyed under this section must be accompanied
 by the Installation Information.  But this requirement does not apply
 if neither you nor any third party retains the ability to install
-modified object code on the User Product (for example, the work has
+modified object code on the User Product (for example, the work has 
 been installed in ROM).
 
   The requirement to provide Installation Information does not include a
@@ -336,7 +336,7 @@ protocols for communication across the network.
 
   Corresponding Source conveyed, and Installation Information provided,
 in accord with this section must be in a format that is publicly
-documented (and with an implementation available to the public in
+documented (and with an implementation available to the public in 
 source code form), and must require no special password or key for
 unpacking, reading or copying.
 
@@ -353,13 +353,13 @@ this License without regard to the additional permissions.
 
   When you convey a copy of a covered work, you may at your option
 remove any additional permissions from that copy, or from any part of
-it.  (Additional permissions may be written to require their own
+it.  (Additional permissions may be written to require their own 
 removal in certain cases when you modify the work.)  You may place
 additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
 
   Notwithstanding any other provision of this License, for material you
-add to a covered work, you may (if authorized by the copyright holders of
+add to a covered work, you may (if authorized by the copyright holders of 
 that material) supplement the terms of this License with terms:
 
     a) Disclaiming warranty or limiting liability differently from the
@@ -409,7 +409,7 @@ the above requirements apply either way.
   You may not propagate or modify a covered work except as expressly
 provided under this License.  Any attempt otherwise to propagate or
 modify it is void, and will automatically terminate your rights under
-this License (including any patent licenses granted under the third
+this License (including any patent licenses granted under the third 
 paragraph of section 11).
 
   However, if you cease all violation of this License, then your
@@ -491,7 +491,7 @@ propagate the contents of its contributor version.
 
   In the following three paragraphs, a "patent license" is any express
 agreement or commitment, however denominated, not to enforce a patent
-(such as an express permission to practice a patent or covenant not to
+(such as an express permission to practice a patent or covenant not to 
 sue for patent infringement).  To "grant" such a patent license to a
 party means to make such an agreement or commitment not to enforce a
 patent against the party.
@@ -539,7 +539,7 @@ otherwise be available to you under applicable patent law.
 
   12. No Surrender of Others' Freedom.
 
-  If conditions are imposed on you (whether by court order, agreement or
+  If conditions are imposed on you (whether by court order, agreement or 
 otherwise) that contradict the conditions of this License, they do not
 excuse you from the conditions of this License.  If you cannot convey a
 covered work so as to satisfy simultaneously your obligations under this
@@ -603,7 +603,7 @@ ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
 THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
 GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
-USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF 
 DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
 PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
 EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF

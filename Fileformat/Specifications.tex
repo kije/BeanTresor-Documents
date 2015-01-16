@@ -22,7 +22,7 @@
 
 % INFO SECTION %
 \def \docTitle{BeanTresor}
-\def \docSubtitle{Specifications}
+\def \docSubtitle{Fileformat Specification}
 \def \docAuthor{\href{mailto:info@kije.ch}{Kim D. Jeker}}
 \def \docDate{\today}
 
@@ -65,16 +65,6 @@
 \usepackage{verbatim}
 \usepackage{fancyvrb}
 
-\setkomafont{disposition}{\normalfont}
-\setkomafont{title}{\normalfont\bfseries\scshape\Huge}
-\setkomafont{subtitle}{\normalfont\scshape\bfseries\normalsize}
-\setkomafont{dictumauthor}{\normalfont\bfseries\small}
-\setkomafont{section}{\newpage\normalfont\scshape\LARGE}
-\setkomafont{subsection}{\normalfont\bfseries\scshape\large}
-\setkomafont{subsubsection}{\normalfont\bfseries\normalsize}
-\setkomafont{descriptionlabel}{\normalfont\bfseries\small}
-
-
 \RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
 {fontsize=\footnotesize,
  %
@@ -86,6 +76,16 @@
                       % commands within the verbatim
  commentchar=*        % comment character
 }
+
+\setkomafont{disposition}{\normalfont}
+\setkomafont{title}{\normalfont\bfseries\scshape\Huge}
+\setkomafont{subtitle}{\normalfont\scshape\bfseries\normalsize}
+\setkomafont{dictumauthor}{\normalfont\bfseries\small}
+\setkomafont{section}{\newpage\normalfont\scshape\LARGE}
+\setkomafont{subsection}{\normalfont\bfseries\scshape\large}
+\setkomafont{subsubsection}{\normalfont\bfseries\normalsize}
+\setkomafont{descriptionlabel}{\normalfont\bfseries\small}
+
 
 
 % DOC INFO 
@@ -112,10 +112,12 @@
 
 \section{Introduction}
 
+
 \section{Legal}
 BeanTresor (and all it's coresponding Documents [like this Specification, etc\ldots], Assets and Files) are, unless stated otherwise, released under the GNU General Public License Version 3 (\textbf{GNU GPLv3}).
 
 License:
 \VerbatimInput{../LICENSE}
+
 
 \end{document}

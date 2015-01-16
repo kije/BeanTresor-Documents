@@ -1,0 +1,167 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[11pt,a4paper,titlepage,portrait,english,final]{scrartcl}
+\pdfgentounicode=1
+\pdfcompresslevel=9
+
+\RequirePackage[
+	pdftex,
+	plainpages=true,
+	breaklinks=true,
+	colorlinks=false,
+	linktoc=all,
+	linkcolor=false,
+	pageanchor=true,
+	unicode=true,
+	pdfborder={0 0 0},
+	hidelinks=true,
+	pdfpagetransition=Dissolve,
+	pdfdisplaydoctitle=true,
+	final=true
+]{hyperref}
+
+
+% INFO SECTION %
+\def \docTitle{BeanTresor}
+\def \docSubtitle{Project Summary}
+\def \docAuthor{\href{mailto:info@kije.ch}{Kim D. Jeker}}
+\def \docDate{\today}
+
+\hypersetup{
+	pdftitle=\docTitle,
+	pdfsubject=\docSubtitle,
+	pdfauthor=\docAuthor,
+}
+
+% PACKAGES
+%\usepackage[osf]{mathpazo} 
+\usepackage[default]{raleway}% Font
+\usepackage[pdftex]{graphicx}
+\usepackage{hfoldsty}
+\usepackage{thumbpdf}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{cleveref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper]{geometry}
+\usepackage[
+	activate=true,
+	babel=true,
+	kerning=all, 
+	tracking=all,
+	letterspace=90
+]{microtype}
+\usepackage{fixltx2e}
+\usepackage{currfile}
+\usepackage{caption}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{lastpage}
+\usepackage{ellipsis}
+\usepackage{bigfoot}
+\usepackage{lipsum}
+\usepackage[parfill]{parskip}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+
+\setkomafont{disposition}{\normalfont}
+\setkomafont{title}{\normalfont\bfseries\scshape\Huge}
+\setkomafont{subtitle}{\normalfont\scshape\bfseries\normalsize}
+\setkomafont{dictumauthor}{\normalfont\bfseries\small}
+\setkomafont{section}{\newpage\normalfont\scshape\LARGE}
+\setkomafont{subsection}{\normalfont\bfseries\scshape\large}
+\setkomafont{subsubsection}{\normalfont\bfseries\normalsize}
+\setkomafont{descriptionlabel}{\normalfont\bfseries\small}
+
+
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
+
+% DOC INFO 
+\title{\docTitle}
+\subtitle{\docSubtitle}
+\author{\large\scshape \docAuthor \\ \large\scshape\textbf{\href{http://kije.ch}{kije-dev}}}
+\date{\normalsize\scshape\docDate}
+
+% HEADER & FOOTER
+\pagestyle{fancy}
+\lhead{\docTitle}
+\chead{\textbf{\leftmark}}
+\rhead{\docSubtitle}
+\lfoot{\currfilename}
+\cfoot{\textbf{\docAuthor}}
+\rfoot{Page \thepage\ of \pageref*{LastPage} }
+
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection*{The Problem(s)\ldots}
+Today, every user has do deal with dozens or even hunderts of passwords daily.
+This often causes users to reuse the same password on multiple sites. 
+
+While this seems very convenient, it's very insecure and can be even dangerous\footnote{e.g. use the same password for \url{themaliciousshop.com} as for e-Banking}, because if someone can retrive the password from one site, he is able to login to other sites where the user also has used this password. 
+
+One might argue, nowadays this isn't as much a problem as it was some years ago, since most Online Services started to hash\footnote{Often also refered as "encrypt", but this is technically not quite correct} their user's passwords. While this is true, we need to acknowledge that breaking into a database is not the only way to get passwords from users. For example, an attacker can also spy on a user's connection, or he can simply bruteforce the password.
+
+Unfortunatelly, the use of a new password for every site (\textbf{one-time passwords}) will not prevent attackers from retriving passwords. But it will minimize the damage caused to the user in such a case.
+
+An other problem is the strength of passwords. In order to remember a password, users often use the name of one of their friends, family members, pet, girl- or boyfriend etc\ldots as their password, which isn't very secure.
+
+\subsection*{\ldots and the solution}
+To make it, nevertheless, easy and convenient for the user to create and use \textbf{secure} one-time passwords, we need password managers.
+
+Such a password manager will be \textbf{BeanTresor}. It will be focused on a very user-friendly user interface and should be cross-platform and open-source.
+
+
+\section{General Description}
+\textbf{BeanTresor} is a secure password manager. It helps the user to generate, store and fill in secure (one-time) passwords for e.g. Websites, Servers, Bank-Accounts, Credit-Cards, etc\ldots
+
+BeanTresor should have the following basic properties:
+
+\subsection{Cross-Platform}
+Since we need our passwords everywhere, it's important that BeanTresor is cross-platform. This does not only include Desktop-Platforms, it also includes mobile platforms such as Android and iOS (and later maybe Windows Mobile, etc\ldots) and maybe even devices like Smart Watches or other wearables (Smart Glasses, etc\ldots).
+
+\subsection{User-friendly}
+It's also very important,  that BeanTresor has a user-friendly user interface, because the user has to use the application often, and don't want to spend much time with searching a particular password or function. A good UI also makes it easier for new users to get used to the application. This may also increase the popularity and adoption rate of the application.
+
+\subsection{Open-Source}
+BeanTresor will also use Crypto to prevent unauthorized from having access to the users passwords. This is also important, if the user wants to store the password database on an online storage such as Dropbox, ect\ldots
+To make the used crypto verifiable by everyone, and because I belive in Open-Source, BeanTresor will be completely opensource and transparent.
+
+Also, to make the 
+
+\subsection{Documentation}
+The Project shall be well-documente (UML, Specifications, Source comments), to make it easy for other developers to fork or contribute to the project.
+
+\subsection{Tests}
+To ensure high code quality and simplifying development and testing, BeanTresor should be developed test-driven.
+
+\subsection{Standards \& Compatibility}
+BeanTresor should rely as much on known standards as possible. This makes it not only most compatible with other software, it also improves the security of the application.
+
+\subsection{Strong Encryption \& Privacy}
+BeanTresor must use very strong crypto. It's important, that only allowed users have access to the informations stored by BeanTresor. It also should do everything possible to protect the users privacy (in every aspect).
+
+\section{Legal}
+BeanTresor (and all it's coresponding Documents [like this Specification, etc\ldots], Assets and Files) are, unless stated otherwise, released under the GNU General Public License Version 3 (\textbf{GNU GPLv3}).
+
+License:
+\VerbatimInput{LICENSE}
+
+\end{document}
