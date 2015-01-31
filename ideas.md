@@ -15,3 +15,8 @@ https://github.com/kije/CppAndroidIosExample
 - Platform-Wrapper (Java, Objective-C, etc...)
 - Platform-Dependent Code (Networking, File I/O, Services & Providers, UI, etc...)
 
+
+## Build, Deployment, Automation
+- Use Ant, do automate build etc...
+- For Java-Apps, use maven for build, test, deploy and dependency management 
+- - Call maven via main ant buil script
