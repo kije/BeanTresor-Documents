@@ -10,8 +10,8 @@
 
 ## Architecture
 https://github.com/kije/CppAndroidIosExample
--> C/C++ Core Library (Platform-independent, contains logic, file format handling and everything else, which has not be performed platform-dependent)
--> Wrapper for other Languages (Java JNI, etc...)
--> Platform-Wrapper (Java, Objective-C, etc...)
--> Platform-Dependent Code (Networking, File I/O, Services & Providers, UI, etc...)
+- C/C++ Core Library (Platform-independent, contains logic, file format handling and everything else, which has not be performed platform-dependent)
+- Wrapper for other Languages (Java JNI, etc...)
+- Platform-Wrapper (Java, Objective-C, etc...)
+- Platform-Dependent Code (Networking, File I/O, Services & Providers, UI, etc...)
 
