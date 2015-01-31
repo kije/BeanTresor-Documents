@@ -20,3 +20,8 @@ https://github.com/kije/CppAndroidIosExample
 - Use Ant, do automate build etc...
 - For Java-Apps, use maven for build, test, deploy and dependency management 
 - - Call maven via main ant buil script
+
+## Librarys, External Resources
+- http://www.cryptopp.com/ Crypto Library
+- http://www.sqlite.org/ DB
+
