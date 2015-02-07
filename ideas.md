@@ -21,7 +21,10 @@ https://github.com/kije/CppAndroidIosExample
 - For Java-Apps, use maven for build, test, deploy and dependency management 
 - - Call maven via main ant buil script
 
-## Librarys, External Resources
+## Libraries, External Resources
 - http://www.cryptopp.com/ Crypto Library
 - http://www.sqlite.org/ DB
 
+
+# Other
+- First, create some sample projects to test these diifrent "new" technologies, so I know what I'm working with
